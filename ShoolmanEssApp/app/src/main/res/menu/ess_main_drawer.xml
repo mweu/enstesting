@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:id="@+id/nav_home_setup_group"
+        android:checkableBehavior="single">
+        <item android:id="@+id/nav_home_setup"
+            android:icon="@drawable/home"
+            android:title="Home" /></group>
+    <!--<group android:id="@+id/nav_server_setup_group"
+        android:checkableBehavior="single">
+        <item android:id="@+id/nav_server_setup"
+            android:icon="@drawable/server_setup"
+            android:title="Server Settings" /></group>
+-->
+    <group android:id="@+id/nav_about_us_group"
+        android:checkableBehavior="single">
+            <item android:id="@+id/nav_about_us"
+                android:icon="@drawable/about_us"
+                android:title="About Us" /></group>
+
+   <!-- <group android:id="@+id/nav_my_account_group"
+        android:checkableBehavior="single">
+        <item android:id="@+id/nav_my_account"
+            android:icon="@drawable/biodata"
+            android:title="My Account" /></group>-->
+
+    <group android:id="@+id/nav_tell_friend_group"
+        android:checkableBehavior="single">
+        <item android:id="@+id/nav_tell_friend"
+            android:icon="@drawable/tell_friend"
+            android:title="Tell a friend" /></group>
+    <group android:id="@+id/nav_config_group"
+        android:checkableBehavior="single">
+        <item android:id="@+id/nav_logout"
+            android:icon="@drawable/logout"
+            android:title="Log Out" /></group>
+</menu>

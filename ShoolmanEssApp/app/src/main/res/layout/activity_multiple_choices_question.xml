@@ -1,0 +1,205 @@
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:fillViewport="true">
+    <android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:tools="http://schemas.android.com/tools">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_66sdp"
+            android:background="#00c853"
+            android:minHeight="?android:attr/actionBarSize"
+            app:layout_constraintBottom_toTopOf="@+id/toolBarLabel"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+            <EditText
+                android:id="@+id/selectedExam"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Selected Exam"
+                android:textAlignment="center"/>
+        </android.support.v7.widget.Toolbar>
+        <android.support.v7.widget.CardView
+            android:id="@+id/levelOne"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_226sdp"
+            android:layout_marginLeft="@dimen/_12sdp"
+            android:layout_marginTop="100dp"
+            android:layout_marginRight="@dimen/_12sdp"
+            app:cardCornerRadius="@dimen/_12sdp"
+            app:layout_constraintBottom_toTopOf="@+id/card_maps"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <WebView
+                android:id="@+id/question"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_10sdp"
+                android:background="@color/colorWhite"
+                android:text="Exam Question?"
+                android:textSize="@dimen/_16ssp"/>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/levelTwo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="1dp"
+            android:layout_marginLeft="@dimen/_12sdp"
+            android:layout_marginRight="@dimen/_12sdp"
+            app:cardCornerRadius="@dimen/_12sdp"
+            app:layout_constraintBottom_toTopOf="@+id/levelTwo2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/levelOne">
+            <LinearLayout
+                android:id="@+id/groupradio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- In RadioGroup create the 1 Radio Button-->
+                <!-- like this we will add some more Radio Button-->
+                <!-- <CheckBox
+                     android:layout_width="fill_parent"
+                     android:layout_height="wrap_content"
+                     android:id="@+id/radia_id1"
+                     android:text="DBMS"
+                     android:textSize="20dp"/>
+
+                 <CheckBox
+                     android:layout_width="fill_parent"
+                     android:layout_height="wrap_content"
+                     android:id="@+id/radia_id2"
+                     android:text="C/C++ Programing"
+                     android:textSize="20dp"/>
+
+                 <RadioButton
+                     android:layout_width="fill_parent"
+                     android:layout_height="wrap_content"
+                     android:id="@+id/radia_id3"
+                     android:text="Data Structure"
+                     android:textSize="20dp"/>
+
+                 <RadioButton
+                     android:layout_width="fill_parent"
+                     android:layout_height="wrap_content"
+                     android:id="@+id/radia_id4"
+                     android:text="Algorithms"
+                     android:textSize="20dp"/>-->
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/levelTwo2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="1dp"
+            android:layout_marginLeft="@dimen/_12sdp"
+            android:layout_marginRight="@dimen/_12sdp"
+            app:cardCornerRadius="@dimen/_12sdp"
+            app:layout_constraintBottom_toTopOf="@+id/levelTree"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/levelTwo">
+
+            <!--<EditText
+                android:id="@+id/questionExplanation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:ems="10"
+                android:inputType="textMultiLine"
+                android:textAlignment="center"
+                android:hint="Explain Here"
+                android:textColorHint="@color/colorAccent"/>-->
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/levelTree"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_12sdp"
+            android:layout_marginTop="1dp"
+            android:layout_marginRight="@dimen/_12sdp"
+            android:layout_marginBottom="1dp"
+            app:cardCornerRadius="@dimen/_12sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/levelFour"
+            app:layout_constraintTop_toBottomOf="@+id/levelTwo2">
+
+            <Button
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+                android:drawableTop="@android:drawable/ic_media_previous"
+                android:padding="@dimen/_10sdp"
+                android:textAlignment="center"
+                android:textSize="@dimen/_16sdp" />
+
+            <Button
+                android:id="@+id/next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_170sdp"
+                android:background="@color/colorWhite"
+                android:padding="@dimen/_10sdp"
+                android:drawableTop="@android:drawable/ic_media_next"
+                android:inputType="textMultiLine"/>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:id="@+id/levelFour"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_12sdp"
+            android:layout_marginTop="1dp"
+            android:layout_marginRight="@dimen/_12sdp"
+            android:layout_marginBottom="1dp"
+            app:cardCornerRadius="@dimen/_12sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/card_level4"
+            app:layout_constraintTop_toBottomOf="@+id/levelTree">
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_23sdp"
+                android:layout_marginRight="@dimen/_23sdp"
+                android:background="@color/colorWhite"
+                android:drawableTop="@android:drawable/ic_menu_send"
+                android:padding="@dimen/_10sdp"
+                android:text="SUBMIT"
+                android:textAlignment="center"
+                android:textSize="@dimen/_16sdp" />
+
+        </android.support.v7.widget.CardView>
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

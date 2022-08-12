@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/ScrollView01"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite">
+
+   <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       android:background="@color/colorWhite"
+        android:orientation="vertical">
+       <EditText
+           android:id="@+id/server_domain"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="10dp"
+           android:layout_marginRight="10dp"
+           android:layout_marginTop="40dp"
+           android:ems="10"
+           android:hint="Sever domain"
+           android:inputType="textPersonName" />
+
+       <EditText
+           android:id="@+id/transmission_protocal"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="10dp"
+           android:layout_marginRight="10dp"
+           android:layout_marginTop="40dp"
+           android:ems="10"
+           android:inputType="textPersonName"
+           android:text="https" />
+
+       <EditText
+           android:id="@+id/server_user_name"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="10dp"
+           android:layout_marginRight="10dp"
+           android:layout_marginTop="40dp"
+           android:ems="10"
+           android:hint="User Name"
+           android:inputType="textPersonName" />
+
+       <EditText
+           android:id="@+id/server_password"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="10dp"
+           android:layout_marginRight="10dp"
+           android:layout_marginTop="40dp"
+           android:ems="10"
+           android:inputType="textPassword"
+           android:text="password" />
+
+       <Button
+           android:id="@+id/save_server_setup"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="40dp"
+           android:layout_marginRight="40dp"
+           android:layout_marginTop="40dp"
+           android:text="Save" />
+   </LinearLayout>
+    </ScrollView>
+</LinearLayout>
